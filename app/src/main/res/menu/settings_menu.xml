@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Item"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:title="Change text"
+                app:showAsAction="never" >
+                <menu>
+                    <item
+                        android:id="@+id/changeSize"
+                        android:title="Change size"
+                        app:showAsAction="never" >
+                        <menu>
+                            <item
+                                android:id="@+id/smallBtn"
+                                android:title="Small"
+                                app:showAsAction="never" />
+                            <item
+                                android:id="@+id/mediumBtn"
+                                android:title="Medium"
+                                app:showAsAction="never" />
+                            <item
+                                android:id="@+id/largeBtn"
+                                android:title="Large"
+                                app:showAsAction="never" />
+                        </menu>
+                    </item>
+                    <item
+                        android:id="@+id/changeColor"
+                        android:title="Change color"
+                        app:showAsAction="never" >
+                        <menu>
+                            <item
+                                android:id="@+id/redBtn"
+                                android:title="RED"
+                                app:showAsAction="never" />
+                            <item
+                                android:id="@+id/greenBtn"
+                                android:title="GREEN"
+                                app:showAsAction="never" />
+                            <item
+                                android:id="@+id/blueBtn"
+                                android:title="BLUE"
+                                app:showAsAction="never" />
+                            <item
+                                android:id="@+id/whiteBtn"
+                                android:title="WHITE"
+                                app:showAsAction="never" />
+                            <item
+                                android:id="@+id/blackBtn"
+                                android:title="BLACK"
+                                app:showAsAction="never" />
+                        </menu>
+
+                    </item>
+
+                </menu>
+            </item>
+            <item
+                android:id="@+id/radiusBtn"
+                android:title="Change radius"
+                app:showAsAction="never">
+                <menu>
+                    <item
+                        android:id="@+id/radius200"
+                        android:title="200m"
+                        app:showAsAction="never" />
+                    <item
+                        android:id="@+id/radius500"
+                        android:title="500m"
+                        app:showAsAction="never" />
+                    <item
+                        android:id="@+id/radius1000"
+                        android:title="1000m"
+                        app:showAsAction="never" />
+                </menu>
+            </item>
+        </menu>
+    </item>
+
+</menu>
